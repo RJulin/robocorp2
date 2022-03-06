@@ -1,6 +1,5 @@
 output/
 venv/
-devdata/
 temp/
 .rpa/
 .idea/
