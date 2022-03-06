@@ -53,13 +53,13 @@ Fill form and send order
     Submit the order
 
 Handle popup
-    Wait For Elements State     //button[contains(text(),'I guess so..')]         state=visible   timeout=5s
+    #Wait For Elements State     //button[contains(text(),'I guess so..')]         state=visible   timeout=5s
     Click                       //button[contains(text(),'I guess so..')]
     Wait For Elements State     //button[contains(text(),'I guess so..')]         state=hidden    timeout=5s
 
 
 Read info
-    Wait For Elements State       //button[contains(text(),'Show model info')]    state=visible
+    #Wait For Elements State       //button[contains(text(),'Show model info')]    state=visible
     Click                         //button[contains(text(),'Show model info')]
     Wait For Elements State       //table[@id='model-info']     state=visible
     ${INFO_TABLE}=                Get Text            //table[@id='model-info'] 
